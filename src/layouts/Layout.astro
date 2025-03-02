@@ -14,7 +14,7 @@ const { title = "Otakuplahub" } = Astro.props;
 </head>
 <body class="bg-gray-900 text-white">
 
-  <!-- Barra superior ha desaparecido -->
+
   
 
 <!-- Navegación -->
@@ -29,59 +29,55 @@ const { title = "Otakuplahub" } = Astro.props;
               </a>
           </div>
 
-          <button type="button" class="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100">
-              <!-- Menu open: "hidden", Menu closed: "block" -->
-              <svg class="block w-6 h-6" xmlns="/" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
-              </svg>
 
-              <!-- Menu open: "block", Menu closed: "hidden" -->
-              <svg class="hidden w-6 h-6" xmlns="/" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-          </button>
+          <!-- !-->
+           
 
-          <div class="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
-              <a href="/Anime" title="Seccion de Anime" class="text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Anime </a>
+          <div class="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-3">
+              <a href="/Anime" title="Seccion de Anime" class="font-bold px-3 py-1 rounded-xl lt-md:w-full md:text-sm border border-neutral-300 dark:border-neutral-800 hover:border-blue-900 dark:hover:border-blue-900 text-center"> Anime </a>
 
-              <a href="/Juegos" title="Seccion de Juegos" class="text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Juegos </a>
+              <a href="/Juegos" title="Seccion de Juegos" class="font-bold px-3 py-1 rounded-xl lt-md:w-full md:text-sm border border-neutral-300 dark:border-neutral-800 hover:border-blue-900 dark:hover:border-blue-900 text-center"> Juegos </a>
 
-              <a href="/Musica" title="Seccion de Musica" class="text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Musica </a>
+              <a href="/Musica" title="Seccion de Musica" class="font-bold px-3 py-1 rounded-xl lt-md:w-full md:text-sm border border-neutral-300 dark:border-neutral-800 hover:border-blue-900 dark:hover:border-blue-900 text-center"> Musica </a>
 
-              <a href="/Foro" title="Seccion de Foro" class="text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Foro </a>
+              <a href="/Foro" title="Seccion de Foro" class="font-bold px-3 py-1 rounded-xl lt-md:w-full md:text-sm border border-neutral-300 dark:border-neutral-800 hover:border-blue-900 dark:hover:border-blue-900 text-center"> Foro </a>
 
-              <a href="/Eventos" title="Seccion de Eventos" class="text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Eventos </a>
+              <a href="/Eventos" title="Seccion de Eventos" class="font-bold px-3 py-1 rounded-xl lt-md:w-full md:text-sm border border-neutral-300 dark:border-neutral-800 hover:border-blue-900 dark:hover:border-blue-900 text-center"> Eventos </a>
           </div>
 
-          <div class="h-10 dark:border-neutral-800 bg-neutral-300/25 dark:bg-neutral-800/25 flex items-center justify-between px-7">
+          <div class="h-20 dark:border-neutral-800 bg-neutral-300/25 dark:bg-neutral-800/25 flex items-center justify-between px-7">
           <a href="https://discord.gg/QMY4r4sSnB" title="Discord Oficial de Otakuplayhub" class="fab fa-discord text-indigo-400 "></a>
-          </div>
+
+        
+
+          <img srcset="https://cdn.discordapp.com/attachments/1005196410846711809/1337547271897612341/Otakuplayhub.webp?ex=67c42fb8&is=67c2de38&hm=69697eea6a9d777f781d92d29a4b9be3037dbdd4e1a7dbb81a2619ce4591311a&" class="w-12 h-12 max-w-xl rounded-full" alt="Perfil de usuario" title="" />
+
+        
       </nav>
 
       <!-- xs to lg -->
-      <nav class="pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden">
+      <nav class="pt-4 pb-6 hover:border-blue-900 border-gray-500 rounded-md shadow-md lg:hidden">
           <div class="flow-root">
               <div class="flex flex-col px-6 -my-2 space-y-1">
-                  <a href="/Anime" title="Seccion de Anime" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Anime </a>
+                  <a href="/Anime" title="Seccion de Anime" class="inline-flex py-2 text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Anime </a>
 
-                  <a href="/Juegos" title="Seccion de Juegos" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Juegos </a>
+                  <a href="/Juegos" title="Seccion de Juegos" class="inline-flex py-2 text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Juegos </a>
 
-                  <a href="/Muica" title="Seccion de Musica" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Muica </a>
+                  <a href="/Muica" title="Seccion de Musica" class="inline-flex py-2 text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Muica </a>
                   
-                    <a href="/Foro" title="Seccion de Foro" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Foro </a>
+                    <a href="/Foro" title="Seccion de Foro" class="inline-flex py-2 text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Foro </a>
 
-                  <a href="/Eventos" title="Seccion de Eventos" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Eventos </a>
+                  <a href="/Eventos" title="Seccion de Eventos" class="inline-flex py-2 text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Eventos </a>
               </div>
           </div>
       </nav>
   </div>
 </header>
 
-
-
   <main class="container mx-auto p-4">
     <slot /> 
   </main>
+
 
 <section class="py-10  sm:pt-16 lg:pt-24 text-white bg-gray-900">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -179,10 +175,6 @@ const { title = "Otakuplahub" } = Astro.props;
                     <li>
                         <a href="/Política de privacidad" title="" class="font-bold px-3 py-1 rounded-xl lt-md:w-full md:text-sm border border-neutral-300 dark:border-neutral-800 hover:border-blue-900 dark:hover:border-blue-900 text-center"> Privacy Policy </a>
                     </li>
-
-                    <li>
-                        <a href="/" title="" class="font-bold px-3 py-1 rounded-xl lt-md:w-full md:text-sm border border-neutral-300 dark:border-neutral-800 hover:border-blue-900 dark:hover:border-blue-900 text-center"> Contacto </a>
-                    </li>
                     
                     <li>
                         <a href="/Faq" title="" class="font-bold px-3 py-1 rounded-xl lt-md:w-full md:text-sm border border-neutral-300 dark:border-neutral-800 hover:border-blue-900 dark:hover:border-blue-900 text-center"> Faq </a>
@@ -202,3 +194,4 @@ const { title = "Otakuplahub" } = Astro.props;
 
 </body>
 </html>
+
