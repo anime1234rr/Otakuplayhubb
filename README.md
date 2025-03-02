@@ -1,1 +1,1 @@
-link de web:otakuplayhub.netlify.app
+link de web: https://otakuplayhub.netlify.app
