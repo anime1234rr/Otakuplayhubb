@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from '../components/Header.astro';
-import Slider from '../components/Slider.astro';
 
 import kakegurui from "../assets/img/Kakegurui.jpg";
 import nierAutomata from "../assets/img/Nier Automata.jpg";
@@ -15,18 +14,16 @@ import discordImg from "../assets/img/discord.jpg";
 import fufu from "../assets/img/Fufu.jpg";
 import osamake from "../assets/img/osamakefull.jpg";
 import aninime from "../assets/img/aninime.jpg";
+import MikuMiku from "../assets/img/MikuMiku.png";
 ---
 
 <Layout title="OtakuPlayhub">
+
   <section class="text-center py-10">
     <h1 class="text-4xl font-bold">OtakuPlayhub</h1>
     <p class="mt-4 text-lg">¡Donde la pasión se encuentra con la diversión!</p>
   </section>
  
- 
-  <Slider />
- 
-  
    
   <section class="container mx-auto my-16 space-y-8 lt-md:px-2">
     <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
@@ -70,29 +67,45 @@ import aninime from "../assets/img/aninime.jpg";
         <p class="text-center text-sm text-neutral-600 dark:text-neutral-400">¡Explora nuestras increíbles recompensas y beneficios!</p>
         <a href="/Eventos" class="mt-auto inline-block px-4 py-2 border border-neutral-300  rounded-xl hover:border-blue-900 hover:text-white transition-colors duration-300 text-center">Explorar</a>
       </li>
+
+      <li class="flex flex-col gap-2 p-3 border border-neutral-300 dark:border-neutral-800 hover:border-blue-900 dark:hover:border-white rounded-xl hover:shadow-lg transition-shadow duration-300">
+        <img src={MikuMiku.src} alt="Eventos" class="w-full h-full object-cover mx-auto rounded-lg bg-neutral-300 dark:bg-neutral-800">
+        <p class="text-center font-semibold text-lg text-neutral-800 dark:text-neutral-300">Recompensas</p>
+        <p class="text-center text-sm text-neutral-600 dark:text-neutral-400">¡Descubre un mundo lleno de emocionantes premios y sorpresas!</p>
+        <a href="/Recompesas" class="mt-auto inline-block px-4 py-2 border border-neutral-300  rounded-xl hover:border-blue-900 hover:text-white transition-colors duration-300 text-center">Explorar</a>
+      </li>
+
     </ul>
   </section> 
 
  <!-- Comentarios chidos y con respeto plis -->
-<details class="w-auto flex flex-col justify-center">
-  <summary class="mt-90 ml-70 px-10 py-2 border border-blue-900 text-blue-900 rounded-xl hover:bg-blue-900 hover:text-white transition-colors duration-300 text-center">Comentarios</summary> 
-  <section id="comentarios">
-    <section class="text-center py-10">
-      <h1 class="text-4xl font-bold hover:underline">Comentarios</h1>
-      <p class="mt-4 text-lg font-medium hover:underline">¡Comentarios de la comunidad!</p>
-    </section>
+ <section id="comentarios">
+    
+  <section class="text-center py-10">
+        <h1 class="text-4xl font-bold">¡Comentarios de la comunidad!</h1>
+      </section>
+    
+  <div id="disqus_thread"></div>
+  <script>
+    /**
+     *  RECOMMENDED CONFIGURACIÓN VARIABLE: EDIT & UNCOMMENT THE SECTION BELOW TO INSERT DINAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#dynamic-data
+     */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL; // Replace PAGE_URL with your website's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your website's unique article identifier variable
+    };
+    */
 
-    <div id="disqus_thread"></div>
-    <script>
-      (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://https-anime1234r-github-io-web-descargas.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', new Date().toString());
-        (d.head || d.body).appendChild(s);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </section>
-</details>
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-anime1234r-github-io-web-descargas.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', new Date().toString());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
 
 </Layout>
